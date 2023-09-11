@@ -102,7 +102,7 @@ func GetVideo(id string, nextPageToken string, videoDataListSource []VideoData) 
 		}
 
 		videoData := VideoData{
-			Id:    item.Snippet.ResourceId.VideoId,
+			Url:   "https://youtu.be/" + item.Snippet.ResourceId.VideoId,
 			Title: item.Snippet.Title,
 		}
 		log.Print(videoData.Title)

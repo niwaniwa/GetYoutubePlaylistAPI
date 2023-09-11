@@ -3,7 +3,7 @@ package main
 type VideoData struct {
 	Title       string `json:"title"`
 	Description string `json:"description"`
-	Id          string `json:"id"`
+	Url         string `json:"url"`
 }
 
 type YoutubePlaylistDataResponse struct {
